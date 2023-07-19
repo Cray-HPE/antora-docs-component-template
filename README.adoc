@@ -17,3 +17,14 @@ This template is designed for a component, and should be pulled into a site by a
 - link:https://gitlab.com/antora/demo/demo-component-a[Demo A component] (what this template is modeled after)
 - link:https://gitlab.com/antora/demo/demo-component-b[Demo B component]
 - link:https://intellij-asciidoc-plugin.ahus1.de/docs/users-guide/features/advanced/antora.html[IntelliJ Plugin for Antora]
+
+== Contribution
+
+To contribute to this repository one may make edits to the subdirectories within the top-level `modules/` directory.
+
+`modules/ROOT`:: This is the primary module for this repository, all content can go under here unless breaking out into new modules is more fitting.
+`modules/<new module>`:: A new module one may be creating after using this template.
+
+If **adding a new module**, create a new folder under `modules/`
+(following the link:https://docs.antora.org/antora/latest/module-directory-names/[Antora recommendations for module directory names])
+and then update the `antora.yml` `nav` key to refer to the new module's `nav.adoc` file.
